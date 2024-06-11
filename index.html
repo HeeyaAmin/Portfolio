@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio - Heeya Amin</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
 
@@ -26,10 +26,10 @@
             <h2>About Me</h2>
             <p>Hi there! I am a Luddy Prospective Student for Fall'24 Masters in Data Science at Indiana University Bloomington. I have graduated with a bachelors degree in Computer Engineering from Gujarat Technological University, India with a GPA of 8.5/10. My technical interests lie in Machine Learning, Artificial Intelligence and Data Science. My hobbies are writing and mountaineering.</p>
             <a href="https://www.linkedin.com/in/heeya-amin/" target="_blank">
-                <img src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn Icon" width="50" height="50">
+                <img src="static/linkedin.png" alt="LinkedIn Icon" width="50" height="50">
             </a>
             <a href="https://github.com/HeeyaAmin" target="_blank">
-                <img src="{{ url_for('static', filename='github.png') }}" alt="GitHub Icon" width="50" height="50">
+                <img src="static/github.png" alt="GitHub Icon" width="50" height="50">
             </a>
         </section>
 
@@ -38,7 +38,7 @@
             <div class="project-grid">
                 <div class="project-card">
                     <h3>Project Title 1</h3>
-                    <img src="{{ url_for('static', filename='project1-image.jpg') }}" alt="Project 1 Image">
+                    <img src="static/project1-image.jpg" alt="Project 1 Image">
                     <p>[Brief description of Project 1]</p>
                     <a href="[Link to Project 1 Website or Repository]">View Project</a>
                 </div>
@@ -72,6 +72,6 @@
         <p>&copy; 2024 Heeya</p>
     </footer>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="static/script.js"></script>
 </body>
 </html>
