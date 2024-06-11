@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Heeya Amin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Heeya Mineshkumar Amin</h1>
+        <p>Student</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi there! I am a Luddy Prospective Student for Fall'24 Masters in Data Science at Indiana University Bloomington. I have graduated with a bachelors degree in Computer Engineering from Gujarat Technological University, India with a GPA of 8.5/10. My technical interests lie in Machine Learning, Artificial Intelligence and Data Science. My hobbies are writing and mountaineering.</p>
+            <a href="https://www.linkedin.com/in/heeya-amin/" target="_blank">
+                <img src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn Icon" width="50" height="50">
+            </a>
+            <a href="https://github.com/HeeyaAmin" target="_blank">
+                <img src="{{ url_for('static', filename='github.png') }}" alt="GitHub Icon" width="50" height="50">
+            </a>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project Title 1</h3>
+                    <img src="{{ url_for('static', filename='project1-image.jpg') }}" alt="Project 1 Image">
+                    <p>[Brief description of Project 1]</p>
+                    <a href="[Link to Project 1 Website or Repository]">View Project</a>
+                </div>
+                <div class="project-card">
+                    this site is under work
+                </div>
+                <div class="project-card">
+                    this site is under work
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me using the form below or through my social media links.</p>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Heeya</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
